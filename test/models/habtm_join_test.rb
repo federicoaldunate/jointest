@@ -1,4 +1,5 @@
 require "test_helper"
+ActiveRecord::Base.logger = Logger.new(STDOUT) if defined?(ActiveRecord::Base)
 
 class HabtmJoinTest < ActiveSupport::TestCase
   test "Apple has_and_belongs_to_many Zebras relationship exists" do
