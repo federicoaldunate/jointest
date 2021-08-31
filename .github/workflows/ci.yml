@@ -33,4 +33,4 @@ jobs:
       - name: Run db migrations
         run: bin/rails db:migrate_with_sql VERBOSE=true
       - name: Run tests
-        run: bin/rails test
+        run: bundle exec rake
